@@ -92,11 +92,11 @@ All findings are centralized in DynamoDB, scored with a quantitative risk model,
                                | (Resources to Scan)  |
                                +----------+-----------+
                                           |
-        -----------------------------------------------------------------
+        -------------------------------------------------------------------
         |        |        |        |        |        |         |          |
        EC2      S3       VPC      RDS      EKS   CloudTrail   IAM      Root
         |        |        |        |        |        |         |          |
-        -----------------------------------------------------------------
+        -------------------------------------------------------------------
                                           ^
                                           |
                            EventBridge (Every 6 Hours)
@@ -106,8 +106,8 @@ All findings are centralized in DynamoDB, scored with a quantitative risk model,
 |                           Lambda Security Scanners                             |
 |--------------------------------------------------------------------------------|
 | EC2 Scanner       S3 Scanner        VPC Scanner      RDS Scanner               |
-| EKS Scanner       CloudTrail        Root Monitor                           |
-| Access Key Audit  Inventory         Privilege Escalation Scanner              |
+| EKS Scanner       CloudTrail        Root Monitor                               |
+| Access Key Audit  Inventory         Privilege Escalation Scanner               |
 +--------------------------------------+-----------------------------------------+
                                        |
                                        | Findings

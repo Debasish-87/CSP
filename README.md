@@ -48,15 +48,15 @@ All findings are centralized in DynamoDB, scored with a quantitative risk model,
           │                            │                            │
           ▼                            ▼                            ▼
 
-┌──────────────────┐       ┌──────────────────┐       ┌──────────────────┐
-│  IAM Analyzers   │       │  Service Scanners│       │  Root & Key Audit│
-│                  │       │                  │       │                  │
-│ • Inventory      │       │ • EC2 Scanner    │       │ • Root Monitor   │
-│ • Risk Analyzer  │       │ • S3 Scanner     │       │ • Access Key     │
-│ • Trust Analyzer │       │ • VPC Scanner    │       │   Audit          │
+┌───────────────────┐      ┌──────────────────┐       ┌──────────────────┐
+│  IAM Analyzers    │      │  Service Scanners│       │  Root & Key Audit│
+│                   │      │                  │       │                  │
+│ • Inventory       │      │ • EC2 Scanner    │       │ • Root Monitor   │
+│ • Risk Analyzer   │      │ • S3 Scanner     │       │ • Access Key     │
+│ • Trust Analyzer  │      │ • VPC Scanner    │       │   Audit          │
 │ • Priv. Escalation│      │ • RDS Scanner    │       └────────┬─────────┘
 │ • Access Key Audit│      │ • EKS Scanner    │                │
-└────────┬─────────┘       │ • CloudTrail     │                │
+└────────┬──────────┘      │ • CloudTrail     │                │
          │                 └────────┬─────────┘                │
          └──────────────────────────┼──────────────────────────┘
                                     │
